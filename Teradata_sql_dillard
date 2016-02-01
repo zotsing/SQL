@@ -1,0 +1,13 @@
+HELP database ua_dillards;
+HELP table trnsact;
+HELP table store_msa;
+HELP table strinfo;
+HELP table skuinfo;
+HELP table DEPTINFO;
+HELP table skstinfo;
+SHOW table trnsact;
+
+select top 1 register
+from trnsact
+where saledate between '2004-08-01' and  '2004-08-10'
+order by orgprice desc,sprice desc 
