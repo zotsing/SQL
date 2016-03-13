@@ -1,0 +1,6 @@
+
+SELECT extract(year from t1.saledate) as yr, extract(month from t1.saledate) as mon,count(distinct t1.saledate) as dy, t2.city,t2.state
+FROM trnsact t1, store_msa t2
+WHERE t1.store = t2.store 
+Having dy = 11
+GROUP by t1.store,yr,mon,t2.city,t2.state
