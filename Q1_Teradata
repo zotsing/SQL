@@ -1,0 +1,3 @@
+SELECT COUNT(DISTINCT sku)
+FROM skuinfo
+WHERE brand = 'polo fas' AND (color = 'black' OR size = 'XXL');
